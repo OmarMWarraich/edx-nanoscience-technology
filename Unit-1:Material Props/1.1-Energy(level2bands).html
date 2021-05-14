@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit-1</title>
+</head>
+<style>
+    
+ol#menu
+{
+  /* List will start at 5 + 1 = 6 */
+  /* Add the desired no after LIST-ITEMS(e.g., LIST_ITEMS 5), if you dont want to start at 1 */
+  counter-reset: LIST-ITEMS;
+}
+
+ol#menu li
+{
+  display: inline;
+  padding-right: 0.5em;
+}
+
+li:before
+{
+  content: counter( LIST-ITEMS ) ".";
+  counter-increment: LIST-ITEMS;
+  padding-right: 0.25em;
+  font-style: italic;
+  font-weight: bold;
+}
+    </style>
+<body>
+    <h1 style="text-align:center">Unit 1: Material Properties and Doping</h1><br /><br/>
+    <h3>Upon completion of unit 1, ability to explain/draw the followting shall be achieved.</h3><br /><br/>
+    <ul><li>Meaning of conduction band, valence band, forbidden gap(or bandgap), electron, hole and intrinsic carrier concentration</li>
+    <li>Difference btw a metal, an isulator and a semiconductor in terms of their energy bands</li>
+    <li>Difference btw crystalline, polycrystalline, and amorphous semiconductors and be familiar with the crystal structure of Si and GaAs</li>
+    <li>Given the Miller indices, draw the corresponding plane or vector</li>
+    <li>Draw the energy vs. momentum(or energy vs. k) diagram for direct and indirect semiconductors</li>
+    <li>how N-type and P-type doping is accomplished and the carrier construction vs. temperature characterstics of semiconductors</li></ul><br /><br/>
+
+    <h3>Introduction of the following terms.</h3>
+    <ol id="menu"><li>Crystalline</li>
+    <li>Amorphous</li>
+    <li>Polycrystalline</li>
+    <li>Grain boundary</li>
+    <li>Dangling bonds</li>
+    <li>Bravais lattices</li>
+    <li>Unit cell</li>
+    <li>Primitive unit cell</li>
+    <li>Face centred cubic</li>
+    <li>Body centred cubic</li>
+    <li>Diamond lattice</li>
+    <li>Zinc blende lattice</li>
+    <li>Lattice constant</li>
+    <li>Miller indices</li>
+    <li>Energy levels</li>
+    <li>Energy bands</li>
+    <li>Energy band diagram</li>
+    <li>Wave Vector</li>
+    <li>Band structure</li>
+    <li>Crystal momentum</li>
+    <li>Forbidden gap (band gap)</li>
+    <li>Conduction band</li>
+    <li>Valence band</li>
+    <li>Electrons(in the cond band)</li>
+    <li>Holes (in the valence band)</li>
+    <li>Effective mass</li>
+    <li>Hot electrons</li>
+    <li>Hot holes</li>
+    <li>Intrinsic carrier concentration</li>
+    <li>Optical generation</li>
+    <li>Electron-hole recombination</li>
+    <li>Thermal energy</li>
+    <li>Thermal generation</li>
+    <li>Metal</li>
+    <li>Insulator</li>
+    <li>Semiconductor</li>
+    <li>III-V semiconductor</li>
+    <li>II-VI semiconductor</li>
+    <li>Direct gap semiconductor</li>
+    <li>Indirect gap semiconductor</li>
+    <li>Extrinsic semiconductor</li>
+    <li>Intrinsic semiconductor</li>
+    <li>Freeze out</li>
+    <li>N-type semiconductor</li>
+    <li>P-type semiconductor</li>
+    <li>Donor (deep and shallow)</li>
+    <li>Amphoteric dopant</li>
+    <li>Acceptor (deep and shallow)</li>
+    <li>Localized state</li></ol>
+<br /><br/>
+<h1 style="text-align:center">Deep Dive through Following Texts</h1><br /><br/>
+<h3>Advance Semiconductor Fundamentals by R.F. Pierret, Pearson Edu. inc. 2003</h3><br/>
+<h3>Semiconductor Physics: Principles, Theory and Nanosacale by Sandip Tiwari, Oxford Electroscience Series Vol. 3, 2020</h3><br/><br/>
+
+<h4>Specific recommendations</h4><br/>
+<h4>L1.1: Energy Level to Energy bands</h4><br/>
+<h4>Pierret, Ch. 2(2.1) and Ch. 3</h4>
+<h4>Tiwari, Ch. 3</h4><br/>
+<h4>L1.2: Crystalline, polycrystalline and amorphous semiconductors</h4><br/>
+<h4>Pierret, Ch. 1(1.2.1-1.2.4)</h4><br/>
+<h4>L1.3: Miller indices</h4><br/>
+<h4>Pierret, Ch.1 (1.2.5, 1.2.6)</h4>
+<h4>L1.4: Properties of common semiconductors</h4><br/>
+<h4>L1.5: Free carriers in semiconductors</h4><br/>
+<h4>Pierret, Ch. 3</h4>
+<h4>Tiwari, Ch. 4</h4>
+<h4>L1.6: Doping</h4>
+<h4>Pierret, Ch. 4(4.3.3)</h4>
+
+<h1 style="text-align:center">Unit 1: Material Properties</h1><br/>
+<h1 style="text-align:center">Lecture 1.1:</h1><br />
+<h1 style="text-align:center">Energy levels to energy bands</h1><br />
+<img src="https://slideplayer.com/slide/3913879/13/images/8/23.3+Coulomb%E2%80%99s+Law+Example+23.1+The+Hydrogen+Atom.jpg" alt="electron" style="text-align:center"><br/><br/>
+
+<h4>The hydrogen atom- +vely charged proton and -vely charged electron. Two held together by the Coulumb force
+    -opposite charges attract each other. Electrons reside in states and we label these atates or these orbitals,
+    s,p,d and f.
+</h4><br/><br/>
+<img src="https://lh3.googleusercontent.com/proxy/t1WWeL8qjTHdgHlsljryxQ8MLhki_QrwJfPr_Qss8Pm_P7rFEeMR_-BD-_O37xjeJcC6afoxCX1Y_MLPwgGw1grOCdow-X4JE4kaqEsIkWXrLJw" alt="bohr" style="text-align:center"> <br/><br/>
+
+<h4>Principle quantum no. = n = another label for states. n =1 is the lowest energy stae, n =2 is a higher energy state
+    , and energy increases as n increases. <br/>
+    Associated with each n is a set of orbitals, the s, p, d and f respectively. E = -13.6 / n<sup>2</sup> eV. (elctron Volts)
+
+</h4><br/><br/>
+
+<h4 style="text-align:center"><u>Silicon atom energy levels</u></h4>
+<img src="https://nanohub.org/app/site/courses/1/11856/slides/003.03.jpg" alt="si" style="text-align:center"> <br/><br/>
+
+<h4>E = E <sub>4S</sub> - E <sub>3P</sub> = hf  (Energy Levels to Energy bands)  </h4><br/>
+
+<p>Atoms probed by exciting an electron to a higher energy orbital and letting it drop down and release energy.
+    That energy comes in the form of light. Planck's constant (h) times the frequency (f) gives the energy of the 
+    emitted photon. 
+    Silicon, the most common semiconductor, has 14 electrons and 14 +ve charges in the nucleus. Electrons reside 
+    in a set of states labelled by n=1, 2, 3, 4, the principal quantum nos. Each quantum no associated by set of orbitals. 
+    n =1 s is the lowest orbital where we can put 2particales. One with spin up, other with spins down. <br/>
+    Put 2 more in the n = 2s orbital. Then for the p orbital we can put 6 as 2 each axis x, y and z directions. 4 electrons
+    left. then put 2 in the 3s<sup>2</sup>  orbital. remaining 2 in 3p<sup>2</sup> orbital. Four of the 3p states r empty. <br/>
+    Electrons in lowest energy states are docile hence of no interest, however, n = 3 state electrons r responsible
+    for chemistry and electrical bonds. These are four of them in silicon. These are <b>valence</b> electrons. There are
+    also four empty states in the 3p orbitals. So we 've eight <b>valence</b> states.
+
+</p><br/><br/>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoo028aockQcSYRZ7s3ElP9eTPi9g40LxaSA&usqp=CAU" alt="el-eb" style="text-align:center">
+<br/><br/>
+
+<p>Above  a silicon crystal approx 5 x 10<sup>22</sup> no. of atoms in cu.cm. crystal lattice comp struct. 
+    Si atom at each corner, each face enter, four inside along body diagonals. Each Si atom surrounded by 4 nearest 
+    neighbours. imp!. The 8 valence states for each atom give rise to a large no. of valence states in the crystal with only half 
+    filled. Sharing these electrons with four nearest neighbours effectively fills all 8 valence states. 
+    The 8 valence states give rise to 8N<sub>atoms</sub> per cm3 in the solid. That's the basis of covalent chemical bond holding 
+    the Si crystal 2gether. Interaction of electron wave fns alters 
+    the discrete energy levels of the isolated Si atoms. 
+    </p>
+
+    <img src="https://lh3.googleusercontent.com/proxy/M8KJZU2gkXaIZt8DlZ5-3816IEywvs6QeiSF83i8O1gKbilj9kZJf7fEsPngn45snBWeC7_E_FOUo28ApYiqP1ENFftYXEHxKhNDfrTQSjdvKmISd3C29bQ" alt="el-eb">
+    <br/><br/>
+    <p>5 x 10<sup>22</sup> no. of atoms in cu.cm of Si. so the same times 8 valence states. but states change coz interaction
+        btw orbitals during overlap. Instead of a large no. of dicrete energy levels, the states spread out in energy and they change in 
+        energy. Half of the states move lower in energy. These are the bonding states filled with electrons. i.e. valence electronns
+        forming the covalent bond. <br/>
+        An eq. no. of empty states(the anti-bonding states). These get pushed up in energy and they r available to hold electrons. 
+        but no electrons r left. Gap btw filled and empty states. Inside the gap no state 4 electrons. hence <b>Forbidden Gap</b>
+        T = 0K. All of the valence band states are filled, all of the conduction band states are empty. and there are no empty spaces 
+        btw dem. <br/>
+        In an isolated Si atom, the states are localized; the electrons sit near specific Si atoms. In a Si crystal
+        lattice, the states become de-localized and spread thruout the entire crystal.</p>
+
+    <p>
+        At T=300K, Si atoms are jiggling around in rand thermal motion. avgthermal energy of 3K<sub>B</sub>/2(Boltzmann's constant) 
+        multiplied by T. Coz of thermal energy, probability of valence bands being broken and electrons goin to the conduction band.
+        For a typical semiconductor at room temp, only a tiny fraction of the large no. of valence band states r empty. Large no. of 
+        empty states in conduction band with its tiny fraction filed with elctrons. Valence bands and conductions bands
+        separated by the fobidden gap or bandgap,E<sub>G</sub>.<br/>
+        A broken bond produces a hole in the valence band and an electron in the conduction band, so the no. of holes and electrons 
+        is equal. Their imp. no. is called intrinsic carrier concentration. Electrons in the conduction band can move abt in da crystal
+        & conduct electrical currents. Holes in the valence band can also move around in the crystal and conduct electrical current.<br/>
+        Both electrons and holes r types of charge carriers -ve& +ve respectively. Den der is a <b>recombination</b> event. i.e.
+        an electron from conduction band dropping down & filling up the hole and going back in the bond.<br/>
+        An <b>energy band diagram</b> is a plot of energy versus position. When we draw these energy band diagrams ,
+        we simplify them. The empty states in  the valence band are near the top wheras the filled sates in the conduction
+        band r near the bottom of the conduction band. SO we simply draw the top of the valence band and the bottom
+        of the conduction band  separated by the bandgap. .E<sub>G</sub>
+    </p>
+    <p>
+        Pure Si called intrinsic Si. At room temp, the thermal energy can break a few bonds producing a small no. of holes
+        ib the valence band abt 10<sup>10</sup>/cucm. Eq. no. electrons in the conduction band. <b>intrinsic carrier concentration</b>!imp.
+        then <b>bandgap</b> also imp i.e. a measure of how difficult its to break bonds. for Si. its. 1.12 eV. GaAs 1.14eV.
+        T.E @ R.T=3k<sub>B</sub>T/2 i.e. 0.039eV. The ability 2 break bonds inversely proportional 2 bandgap. 
+    </p>
+    <p>
+        Light is wave or particle called photon, the energy of each photon given by Planck's constant, h times the f of light. Shine light 
+        on semiconductor with high f or short lambda (e.g., blue or violet or ultraviolet), then photons shall 've a lot of energy. With
+        an energetic photon, an electron deep in the valence band cud muv way up in conduction band. However, within femtoseconds, the electron
+        loses it's energy and drops down to the bottom of the conduction band. These r <b>hot carriers</b>  b4 relaxing 
+        2 da band edges coz temp is da way of measuring the energy of a carrier.
+    </p>
+    <p>
+        Metals conduct electricity and heat well. Insulators dont conduct electricity (usu heat)well. Semiconductors
+        in-btw, props cntrlable reproducibly..  
+    </p>
+
+<h1 style="text-align:center">S U M M A R Y</h1><br/><br/>
+<ul><li>The localized energy levels become delocalized energy bands in a solid.</li>
+<li>Eth happens very near the top of the valence band & very near the bottom of the conduction band.</li>
+<li>The electrical current in a semiconductor is carried by electrons in the conduction band and by holes in the valence band.</li>
+<li>The band gap and intrinsic carrier concentration are key parameters for semiconductors</li>
+<li>The wider the band gap, the smaller the intrinsic carrier concentration or the concentration of broken covalent bonds</li></ul>
+</body>
+</html>
